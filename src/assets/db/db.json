@@ -1,0 +1,48 @@
+{
+    "products": [
+      { 
+        "id": 1,
+        "name": "shirts",
+        "category_id": 5,
+        "description": "description dummy",
+        "price": 300,
+        "is_available": true,
+        "rating": 4,
+        "review": 150,
+        "vendor_name": "abc shop",
+        "warranty": 1 
+        
+       },
+       { 
+        "id": 2,
+        "name": "Women T-shirt",
+        "category_id": 2,
+        "description": "Women description",
+        "price": 15,
+        "is_available": true,
+        "rating": 3,
+        "review": 12,
+        "vendor_name": "hydery shop",
+        "warranty": 1 
+        
+       },
+       { 
+        "id": 3,
+        "name": "Kids T-shirt",
+        "category_id": 4,
+        "description": "Kids description",
+        "price": 12,
+        "is_available": true,
+        "rating": 5,
+        "review": 102,
+        "vendor_name": "hydery shop",
+        "warranty": 1 
+        
+       }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment1", "postId": 1 },
+      { "id": 2, "body": "some comment2", "postId": 2 }
+    ],
+    "profile": { "name": "typicode" }
+  }
