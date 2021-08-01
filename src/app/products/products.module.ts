@@ -11,7 +11,7 @@ import { ViewAllProductsComponent } from './view-all-products/view-all-products.
 import { ViewProductsByDateComponent } from './view-products-by-date/view-products-by-date.component';
 import { ViewProductsByCategoryComponent } from './view-products-by-category/view-products-by-category.component';
 import {SiteLayoutModule} from '../site-layout/site-layout.module';
-
+import {RouterModule} from '@angular/router';
 @NgModule({
   declarations: [
     ProductsComponent,
@@ -26,7 +26,8 @@ import {SiteLayoutModule} from '../site-layout/site-layout.module';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    SiteLayoutModule
+    SiteLayoutModule,
+    RouterModule
   ],
   exports:[
     ProductsComponent,

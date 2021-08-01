@@ -3,10 +3,11 @@
       { 
         "id": 1,
         "name": "shirts",
-        "category_id": 5,
+        "categoryId": 2,
         "description": "description dummy",
         "price": 300,
         "is_available": true,
+        "image": "http://localhost:4200/assets/images/06.jpg",
         "rating": 4,
         "review": 150,
         "vendor_name": "abc shop",
@@ -16,10 +17,11 @@
        { 
         "id": 2,
         "name": "Women T-shirt",
-        "category_id": 2,
+        "categoryId": 3,
         "description": "Women description",
         "price": 15,
         "is_available": true,
+        "image": "http://localhost:4200/assets/images/16.jpg",
         "rating": 3,
         "review": 12,
         "vendor_name": "hydery shop",
@@ -29,10 +31,11 @@
        { 
         "id": 3,
         "name": "Kids T-shirt",
-        "category_id": 4,
+        "categoryId": 4,
         "description": "Kids description",
         "price": 12,
         "is_available": true,
+        "image": "http://localhost:4200/assets/images/user3.jpg",
         "rating": 5,
         "review": 102,
         "vendor_name": "hydery shop",
@@ -40,9 +43,12 @@
         
        }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment1", "postId": 1 },
-      { "id": 2, "body": "some comment2", "postId": 2 }
+    "categories": [
+      { "id": 1, "catname": "Electronics"},
+      { "id": 2, "catname": "Men"},
+      { "id": 3, "catname": "Women"},
+      { "id": 4, "catname": "Kids"},  
+      { "id": 5, "catname": "Kitchen & Dinning"}
     ],
-    "profile": { "name": "typicode" }
+    "users": { "fullname": "umairriaz","username":"umair","password":"123"}
   }

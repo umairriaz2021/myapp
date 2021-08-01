@@ -1,47 +1,48 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-interface productType {
-  productId: number,
-  catId: number,
-  productName: string,
-  description: string,
-  rating:string,
-  price:number,
-  productImage: string,
-  isAvailable:boolean,
-  color:string,
-  review:number
-}
+import { Observable } from 'rxjs';
+import { Category } from '../site-layout/category';
+import {ProductType} from './product-type'
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
   constructor(private Http: HttpClient ) { }
-   
-  createProducts(productBody:productType){
+  
+  showAllProducts(){
+    const url = "http://localhost:3000/products";
+    return this.Http.get(url);
+  }
+  createProducts(productBody:ProductType){
     const url = "http://localhost::3000/products";
-    return this.Http.post<productType>(url,productBody);
+    return this.Http.post(url,productBody);
   }
-  getProducts(productId:productType){
+  getProducts(productId:ProductType){
+    const url = "http://localhost::3000/products?id="+productId;
+    return this.Http.get(url);
+  }
+  updateProduct(productId:ProductType, productBody:ProductType){
     const url = "http://localhost::3000/products/"+productId;
-    return this.Http.get<productType>(url);
+    return this.Http.put(url,productBody);  
   }
-  updateProduct(productId:productType, productBody:productType){
+  deleteProduct(productId:ProductType){
     const url = "http://localhost::3000/products/"+productId;
-    return this.Http.put<productType>(url,productBody);  
+    return this.Http.delete(url);
   }
-  deleteProduct(productId:productType){
-    const url = "http://localhost::3000/products/"+productId;
-    return this.Http.delete<productType>(url);
-  }
-  searchProductByCat(catId:productType){
-    const url = "http://localhost::3000/products/category/"+catId;
-    return this.Http.get<productType>(url);
+  searchProductByCat(categoryId:any){
+    const url = "http://localhost:3000/products?categoryId="+categoryId;
+    return this.Http.get(url);
   }
 
-  searchProductByDate(dateParams:productType){
+  searchProductByDate(dateParams:ProductType){
     const url = "http://localhost::3000/products/date/"+dateParams;
-    return this.Http.get<productType>(url);
+    return this.Http.get(url);
   }
+  getCategories():Observable<any>{
+    const catUrl = "http://localhost:3000/categories";
+    return this.Http.get(catUrl);
+  }
+
+
 }

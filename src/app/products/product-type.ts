@@ -1,4 +1,4 @@
-export interface Products {
+export interface ProductType {
     productId: number,
     catId: number,
     productName: string,

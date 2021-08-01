@@ -1,12 +1,12 @@
 
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/700x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="{{proData.image}}" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-left">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item {{ProductID}}</h5>
+                                    <h5 class="fw-bolder">{{ProductID}}</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -16,8 +16,8 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    <h3>$40.00</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa et ex rerum facilis voluptas adipisci obcaecati necessitatibus deleniti aliquid corporis quod a optio eligendi fugiat, quae aspernatur voluptatem maxime non.</p>
+                                    <h3>{{proData.price}}</h3>
+                                    <p>{{proData.description}}</p>
                                 </div>
                             </div>
                             <!-- Product actions-->

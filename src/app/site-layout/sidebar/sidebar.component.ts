@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from 'src/app/products/products.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
-  constructor() { }
+catList:any = "";
+  constructor(private proService: ProductsService) { }
 
   ngOnInit(): void {
+    this.proService.getCategories().subscribe(data => this.catList = data);
   }
 
 }
