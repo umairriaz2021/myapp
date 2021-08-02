@@ -10,7 +10,7 @@ import { ProductsService } from '../products.service';
 export class ViewProductComponent implements OnInit {
 
   constructor(private activeRoute: ActivatedRoute, private proService: ProductsService) { }
-  ProductID:any = 0;
+  ProductID:any = "";
   proData:any = "";
   ngOnInit(): void {
     this.activeRoute.params.subscribe(data =>this.ProductID = data.id);

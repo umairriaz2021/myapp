@@ -1,12 +1,12 @@
 
-                        <div class="card h-100">
+                        <div class="card h-100" *ngFor="let proData of proData">
                             <!-- Product image-->
                             <img class="card-img-top" src="{{proData.image}}" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-left">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">{{ProductID}}</h5>
+                                    <h5 class="fw-bolder">{{proData.name}}</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>

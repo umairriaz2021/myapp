@@ -13,15 +13,15 @@ export class ViewProductsByCategoryComponent implements OnInit {
   constructor(private activeRoute: ActivatedRoute, private proService: ProductsService ) { }
 
   ngOnInit(): void {
-    this.activeRoute.queryParams.subscribe(data => {
+    this.activeRoute.params.subscribe(data => {
     this.searchCategory = data.id;
     this.proService.searchProductByCat(this.searchCategory).subscribe(categories => {
-    this.catList = categories;
+      this.catList = categories;
     });
     
   });  
-     
 
+ 
   
   }
 

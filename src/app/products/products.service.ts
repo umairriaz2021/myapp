@@ -19,7 +19,7 @@ export class ProductsService {
     return this.Http.post(url,productBody);
   }
   getProducts(productId:ProductType){
-    const url = "http://localhost::3000/products?id="+productId;
+    const url = "http://localhost:3000/products?id="+productId;
     return this.Http.get(url);
   }
   updateProduct(productId:ProductType, productBody:ProductType){
@@ -30,7 +30,7 @@ export class ProductsService {
     const url = "http://localhost::3000/products/"+productId;
     return this.Http.delete(url);
   }
-  searchProductByCat(categoryId:any){
+  searchProductByCat(categoryId:ProductType){
     const url = "http://localhost:3000/products?categoryId="+categoryId;
     return this.Http.get(url);
   }
