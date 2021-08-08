@@ -1,54 +1,82 @@
 {
-    "products": [
-      { 
-        "id": 1,
-        "name": "shirts",
-        "categoryId": 2,
-        "description": "description dummy",
-        "price": 300,
-        "is_available": true,
-        "image": "http://localhost:4200/assets/images/06.jpg",
-        "rating": 4,
-        "review": 150,
-        "vendor_name": "abc shop",
-        "warranty": 1 
-        
-       },
-       { 
-        "id": 2,
-        "name": "Women T-shirt",
-        "categoryId": 3,
-        "description": "Women description",
-        "price": 15,
-        "is_available": true,
-        "image": "http://localhost:4200/assets/images/16.jpg",
-        "rating": 3,
-        "review": 12,
-        "vendor_name": "hydery shop",
-        "warranty": 1 
-        
-       },
-       { 
-        "id": 3,
-        "name": "Kids T-shirt",
-        "categoryId": 4,
-        "description": "Kids description",
-        "price": 12,
-        "is_available": true,
-        "image": "http://localhost:4200/assets/images/user3.jpg",
-        "rating": 5,
-        "review": 102,
-        "vendor_name": "hydery shop",
-        "warranty": 1 
-        
-       }
-    ],
-    "categories": [
-      { "id": 1, "catname": "Electronics"},
-      { "id": 2, "catname": "Men"},
-      { "id": 3, "catname": "Women"},
-      { "id": 4, "catname": "Kids"},  
-      { "id": 5, "catname": "Kitchen & Dinning"}
-    ],
-    "users": { "fullname": "umairriaz","username":"umair","password":"123"}
+  "products": [
+    {
+      "id": 1,
+      "name": "shirts",
+      "categoryId": 2,
+      "description": "description dummy",
+      "price": 300,
+      "is_available": true,
+      "image": "http://localhost:4200/assets/images/06.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 2,
+      "name": "Women T-shirt",
+      "categoryId": 3,
+      "description": "Women description",
+      "price": 15,
+      "is_available": true,
+      "image": "http://localhost:4200/assets/images/16.jpg",
+      "rating": 3,
+      "review": 12,
+      "vendor_name": "hydery shop",
+      "warranty": 1
+    },
+    {
+      "id": 3,
+      "name": "Kids T-shirt",
+      "categoryId": 4,
+      "description": "Kids description",
+      "price": 12,
+      "is_available": true,
+      "image": "http://localhost:4200/assets/images/user3.jpg",
+      "rating": 5,
+      "review": 102,
+      "vendor_name": "hydery shop",
+      "warranty": 1
+    },
+    {
+      "id": 4,
+      "name": "Test Product",
+      "description": "Test descriptio",
+      "rating": "2",
+      "categoryId": "2",
+      "review": "poor",
+      "vendor_name": "my shop",
+      "image": "",
+      "is_available": true,
+      "warranty": "10 Years"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "catname": "Electronics"
+    },
+    {
+      "id": 2,
+      "catname": "Men"
+    },
+    {
+      "id": 3,
+      "catname": "Women"
+    },
+    {
+      "id": 4,
+      "catname": "Kids"
+    },
+    {
+      "id": 5,
+      "catname": "Kitchen & Dinning"
+    }
+  ],
+  "users": {
+    "fullname": "umairriaz",
+    "username": "umair",
+    "password": "123"
   }
+}

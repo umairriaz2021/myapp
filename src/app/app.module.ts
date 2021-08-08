@@ -7,7 +7,7 @@ import { OrdersModule } from './orders/orders.module';
 import {SiteLayoutModule} from './site-layout/site-layout.module';
 import {ProductsModule} from './products/products.module';
 import {HttpClientModule} from '@angular/common/http';
-
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import {HttpClientModule} from '@angular/common/http';
     OrdersModule,
     SiteLayoutModule,
     ProductsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

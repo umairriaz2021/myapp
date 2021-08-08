@@ -15,7 +15,7 @@ export class ProductsService {
     return this.Http.get(url);
   }
   createProducts(productBody:ProductType){
-    const url = "http://localhost::3000/products";
+    const url = "http://localhost:3000/products";
     return this.Http.post(url,productBody);
   }
   getProducts(productId:ProductType){
