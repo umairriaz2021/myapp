@@ -50,6 +50,18 @@
       "image": "",
       "is_available": true,
       "warranty": "10 Years"
+    },
+    {
+      "name": "My Tshirt",
+      "description": "Hello World",
+      "rating": "2",
+      "categoryId": "2",
+      "review": "average",
+      "vendor_name": "my shop",
+      "image": "http://localhost:4200/assets/images/",
+      "is_available": true,
+      "warranty": "12 Years",
+      "id": 5
     }
   ],
   "categories": [
