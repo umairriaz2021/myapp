@@ -1,84 +1,80 @@
 <form #myForm="ngForm" (ngSubmit)="addProduct(myForm.value)" enctype="multipart/form-data">
-<div class="row mb-4">
-  <div class="col-sm-12 col-10 d-block m-auto">
-    <!-- Name input -->
-    <div class="form-group">
-      <label class="form-label" for="form4Example1">Title</label>
-      <input type="text" ngModel  name="title" required class="form-control" />
-    </div>
-    <!-- Message input -->
-    <div class="form-group">
-      <label class="form-label" for="form4Example3">Description</label>
-      <textarea class="form-control" ngModel  name="desc" required rows="4"></textarea>
-    </div>
-    
-  </div>
- </div>
- <div class="row mb-5">
-  <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
-    <div class="form-group">
-      <label class="form-label" for="form4Example1">Price</label>
-      <input type="number" ngModel  name="price" required class="form-control" placeholder="Enter price" />
-    </div>
-    
-  </div>
-  <!-- Checkbox -->
-  <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
-    <div class="form-group">
-      <label class="form-label" for="form4Example1">Vendors</label>
-      <select  ngModel name="vendors" class="form-control">
-        <option value="0">All Vendors</option>
-        <option value="my shop">My Shop</option>
-        <option value="my shop1">My Shop1</option>
-        <option value="my shop 2">My Shop2</option>
-        <option value="my shop 3">My Shop 3</option>
-      </select>
+  <div class="row mb-4">
+    <div class="col-sm-12 col-10 d-block m-auto">
+      <!-- Name input -->
+      <div class="form-group">
+        <label class="form-label" for="form4Example1">Title</label>
+        <input type="text" ngModel name="title" required class="form-control" />
+      </div>
+      <!-- Message input -->
+      <div class="form-group">
+        <label class="form-label" for="form4Example3">Description</label>
+        <textarea class="form-control" ngModel name="desc" required rows="4"></textarea>
+      </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
-    <div class="form-group">
-      <label class="form-label" for="form4Example1">Rating</label>
-      <select ngModel  name="rating" class="form-control">
-        <option value="0">Rating</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
+  <div class="row mb-5">
+    <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
+      <div class="form-group">
+        <label class="form-label" for="form4Example1">Price</label>
+        <input type="number" ngModel name="price" required class="form-control" placeholder="Enter price" />
+      </div>
     </div>
+    <!-- Checkbox -->
+    <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
+      <div class="form-group">
+        <label class="form-label" for="form4Example1">Vendors</label>
+        <select ngModel name="vendors" class="form-control">
+          <option value="0">All Vendors</option>
+          <option value="my shop">My Shop</option>
+          <option value="my shop1">My Shop1</option>
+          <option value="my shop 2">My Shop2</option>
+          <option value="my shop 3">My Shop 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
+      <div class="form-group">
+        <label class="form-label" for="form4Example1">Rating</label>
+        <select ngModel name="rating" class="form-control">
+          <option value="0">Rating</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
     </div>
     <div class="col-md-3 col-sm-6 col-10 d-block m-auto">
       <div class="form-group">
         <label class="form-label" for="form4Example1">Warranty</label>
-        <select ngModel  name="warranty" class="form-control">
+        <select ngModel name="warranty" class="form-control">
           <option value="0">Warranties</option>
           <option value="10 Years">10 Years</option>
           <option value="12 Years">12 Years</option>
           <option value="14 Years">14 Years</option>
         </select>
       </div>
-      </div>
-
-</div>
-<div class="row">
-  <div class="col-md-4 col-sm-10 d-block m-auto">
-    <div class="form-group">
-      <label class="form-label" for="form4Example1">Categories</label>
-      <select  ngModel name="allcats" class="form-control">
-        <option value="0">All Categories</option>
-        <option value="1">Men</option>
-        <option value="2">Womens</option>
-        <option value="3">Kids</option>
-        <option value="4">Kitchen</option>
-      </select>
-   
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-10 d-block m-auto">
+      <div class="form-group">
+        <label class="form-label" for="form4Example1">Categories</label>
+        <select ngModel name="allcats" class="form-control">
+          <option value="0">All Categories</option>
+          <option value="1">Men</option>
+          <option value="2">Womens</option>
+          <option value="3">Kids</option>
+          <option value="4">Kitchen</option>
+        </select>
+      </div>
     </div>
     <!-- Checkbox -->
     <div class="col-md-4 col-sm-10 d-block m-auto">
       <div class="form-group">
         <label class="form-label" for="form4Example1">Reviews</label>
-        <select ngModel name="reviews"  class="form-control">
+        <select ngModel name="reviews" class="form-control">
           <option value="0">All Reviews</option>
           <option value="poor">Poor</option>
           <option value="average">Average</option>
@@ -90,27 +86,21 @@
     <div class="col-md-4 col-sm-12 col-10 d-block m-auto">
       <div class="form-group">
         <label class="form-label" for="form4Example1">Upload Image</label>
-       
         <input type="file" id="myImage" (change)="onSelectFile($event)" ngModel name="myimage" class="form-control" />
         <br>
         <img [src]="url" width="100px" height="100px" class="img-fluid my-4" alt="">
       </div>
-      
-      
     </div>
-    
   </div>
   <div class="row my-3">
-  <div class="col-md-3 col-sm-12 col-12 d-block">
-    <div class="form-check my-3">
-      <input class="form-check-input" type="checkbox" name="is_available" ngModel value="1" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Is Available
-      </label>
+    <div class="col-md-3 col-sm-12 col-12 d-block">
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" name="is_available" ngModel value="1" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Is Available
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary mb-4">Send</button>
     </div>
-    <button type="submit" class="btn btn-primary mb-4">Send</button>
   </div>
-
-  </div>
-
 </form>
